@@ -18,13 +18,18 @@ import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
 
+import H1 from '../../components/H1';
+
 export function Contact() {
   useInjectReducer({ key: 'contact', reducer });
   useInjectSaga({ key: 'contact', saga });
 
   return (
     <div>
-      <FormattedMessage {...messages.header} />
+      <H1>
+        <FormattedMessage {...messages.header} />
+      </H1>
+      
     </div>
   );
 }
