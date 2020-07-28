@@ -7,20 +7,34 @@ import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
 import Banner from './banner.jpg';
 import messages from './messages';
+import { TopHeader, InnerHeader } from './style';
 
 function Header() {
   return (
     <div>
-      <A href="https://www.reactboilerplate.com/">
-        <Img src={Banner} alt="react-boilerplate - Logo" />
-      </A>
+      <TopHeader>
+        <InnerHeader />
+      </TopHeader>
       <NavBar>
         <HeaderLink to="/">
           <FormattedMessage {...messages.home} />
         </HeaderLink>
-        <HeaderLink to="/features">
-          <FormattedMessage {...messages.features} />
+        <HeaderLink to="/contact">
+          <FormattedMessage {...messages.contact} />
         </HeaderLink>
+        <HeaderLink to="/team">
+          <FormattedMessage {...messages.team} />
+        </HeaderLink>
+        <HeaderLink to="/portfolio">
+          <FormattedMessage {...messages.portfolio} />
+        </HeaderLink>
+        <HeaderLink to="/product">
+          <FormattedMessage {...messages.product} />
+        </HeaderLink>
+        <HeaderLink to="/about">
+          <FormattedMessage {...messages.about} />
+        </HeaderLink>
+        
       </NavBar>
     </div>
   );

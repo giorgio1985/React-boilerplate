@@ -10,18 +10,23 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
-
+import Contact from 'containers/Contact/Loadable';
+import Team from 'containers/Team/Loadable';
+import Portfolio from 'containers/Portfolio/Loadable';
+import Product from 'containers/Product/Loadable';
+import About from 'containers/About/Loadable';
 import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
+import 'bootstrap/dist/css/bootstrap.css';
 
 import GlobalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`
-  max-width: calc(768px + 16px * 2);
-  margin: 0 auto;
+  max-width: calc(1468px + 16px * 2);
+  margin: auto;
   display: flex;
   min-height: 100%;
   padding: 0 16px;
@@ -40,8 +45,12 @@ export default function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/features" component={FeaturePage} />
-        <Route path="" component={NotFoundPage} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/team" component={Team} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/product" component={Product} />
+        <Route path="/about" component={About} />
+        <Route path="/*" component={NotFoundPage} />
       </Switch>
       <Footer />
       <GlobalStyle />

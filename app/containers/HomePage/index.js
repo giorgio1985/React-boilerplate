@@ -19,6 +19,9 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
+import SearchBar from '../SearchBar';
+import WelcomePage from './WelcomePage';
+import Spot from './Spot';
 import H2 from 'components/H2';
 import ReposList from 'components/ReposList';
 import AtPrefix from './AtPrefix';
@@ -32,6 +35,8 @@ import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import './HomePage.css';
+
 
 const key = 'home';
 
@@ -59,45 +64,33 @@ export function HomePage({
 
   return (
     <article>
-      <Helmet>
-        <title>Home Page</title>
-        <meta
-          name="description"
-          content="A React.js Boilerplate application homepage"
-        />
-      </Helmet>
-      <div>
-        <CenteredSection>
-          <H2>
-            <FormattedMessage {...messages.startProjectHeader} />
-          </H2>
-          <p>
+    <Helmet>
+      <title>Home Page</title>
+      <meta
+        name="description"
+        content="A React.js Boilerplate application homepage"
+      />
+    </Helmet>
+    <WelcomePage>
+      <CenteredSection>
+        <div className="parallax" />
+        <div>
+          <div>
+            <SearchBar>
+              <i className="fa fa-search" aria-hidden="true" />
+            </SearchBar>
+          </div>
+        </div>
+        <div className="parallax" />
+        <div>
+          <Spot>
             <FormattedMessage {...messages.startProjectMessage} />
-          </p>
-        </CenteredSection>
-        <Section>
-          <H2>
-            <FormattedMessage {...messages.trymeHeader} />
-          </H2>
-          <Form onSubmit={onSubmitForm}>
-            <label htmlFor="username">
-              <FormattedMessage {...messages.trymeMessage} />
-              <AtPrefix>
-                <FormattedMessage {...messages.trymeAtPrefix} />
-              </AtPrefix>
-              <Input
-                id="username"
-                type="text"
-                placeholder="mxstbr"
-                value={username}
-                onChange={onChangeUsername}
-              />
-            </label>
-          </Form>
-          <ReposList {...reposListProps} />
-        </Section>
-      </div>
-    </article>
+          </Spot>
+        </div>
+        <div className="parallax" />
+      </CenteredSection>
+    </WelcomePage>
+  </article>
   );
 }
 
