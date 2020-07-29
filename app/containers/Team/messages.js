@@ -6,7 +6,7 @@
 
 import { defineMessages } from 'react-intl';
 
-export const scope = 'app.containers.Team';
+export const scope = 'boilerplate.containers.Team';
 
 export default defineMessages({
   header: {

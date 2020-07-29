@@ -76,9 +76,9 @@ export function HomePage({
         <div className="parallax" />
         <div>
           <div>
-            <SearchBar>
-              <i className="fa fa-search" aria-hidden="true" />
-            </SearchBar>
+          <SearchBar>
+            <i className="fa fa-search" aria-hidden="true" />
+          </SearchBar>
           </div>
         </div>
         <div className="parallax" />

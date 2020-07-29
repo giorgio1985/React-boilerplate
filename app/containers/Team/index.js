@@ -17,6 +17,12 @@ import makeSelectTeam from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
+import H3 from 'components/H3';
+import HR from 'components/HR';
+import P from 'components/P';
+import ShowTeam from './ShowTeam';
+import Section from '../Contact/Section';
+
 
 export function Team() {
   useInjectReducer({ key: 'team', reducer });
@@ -24,8 +30,15 @@ export function Team() {
 
   return (
     <div>
+    <ShowTeam>
       <FormattedMessage {...messages.header} />
-    </div>
+    </ShowTeam>
+    <HR />
+    <Section>
+      <H3>Developer:</H3>
+      <P>Giorgio Adonoo</P>
+    </Section>
+  </div>
   );
 }
 

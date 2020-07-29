@@ -6,7 +6,7 @@
 
 import { defineMessages } from 'react-intl';
 
-export const scope = 'app.containers.Portfolio';
+export const scope = 'boilerplate.containers.ShowPortfolio';
 
 export default defineMessages({
   header: {

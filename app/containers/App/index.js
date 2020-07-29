@@ -16,16 +16,16 @@ import Portfolio from 'containers/Portfolio/Loadable';
 import Product from 'containers/Product/Loadable';
 import About from 'containers/About/Loadable';
 import HomePage from 'containers/HomePage/Loadable';
-import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
+import Login from 'containers/Login/Loadable';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import GlobalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`
-  max-width: calc(1468px + 16px * 2);
+  max-width: calc(1478px + 16px * 2);
   margin: auto;
   display: flex;
   min-height: 100%;
@@ -50,6 +50,7 @@ export default function App() {
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/product" component={Product} />
         <Route path="/about" component={About} />
+        <Route path="/login" component={Login} />
         <Route path="/*" component={NotFoundPage} />
       </Switch>
       <Footer />

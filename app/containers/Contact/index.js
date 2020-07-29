@@ -16,9 +16,13 @@ import { useInjectReducer } from 'utils/injectReducer';
 import makeSelectContact from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import WelcomeContacts from './WelcomeContact';
+import Section from './Section';
 import messages from './messages';
 
-import H1 from '../../components/H1';
+import H3 from '../../components/H3';
+import HR from 'components/HR';
+import P from 'components/P';
 
 export function Contact() {
   useInjectReducer({ key: 'contact', reducer });
@@ -26,11 +30,19 @@ export function Contact() {
 
   return (
     <div>
-      <H1>
-        <FormattedMessage {...messages.header} />
-      </H1>
-      
-    </div>
+    <WelcomeContacts>
+      <FormattedMessage {...messages.header} />
+    </WelcomeContacts>
+    <HR />
+    <Section>
+      <H3>Email:</H3>
+      <P>giorgio.adonoo@senseisrl.it</P>
+    </Section>
+    <Section>
+      <H3>Telefono:</H3>
+      <P>+39 329*****</P>
+    </Section>
+  </div>
   );
 }
 

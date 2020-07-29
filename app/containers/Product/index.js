@@ -17,6 +17,9 @@ import makeSelectProduct from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
+import H3 from 'components/H3';
+import HR from 'components/Hr';
+import ShowProduct from './ShowProduct';
 
 export function Product() {
   useInjectReducer({ key: 'product', reducer });
@@ -24,7 +27,13 @@ export function Product() {
 
   return (
     <div>
-      <FormattedMessage {...messages.header} />
+      <ShowProduct>
+        <FormattedMessage {...messages.header} />
+      </ShowProduct>
+      <HR />
+      <div style={{ textAlign: 'center ' }}>
+        <H3>Working in progress ..</H3>
+      </div>
     </div>
   );
 }
