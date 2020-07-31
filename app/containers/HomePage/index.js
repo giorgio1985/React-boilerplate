@@ -36,9 +36,11 @@ import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import './HomePage.css';
+import ReactPlayer from 'react-player';
 
 
 const key = 'home';
+
 
 export function HomePage({
   username,
@@ -75,19 +77,33 @@ export function HomePage({
       <CenteredSection>
         <div className="parallax" />
         <div>
-          <div>
+          <div>         
+         
+          
           <SearchBar>
             <i className="fa fa-search" aria-hidden="true" />
           </SearchBar>
+          
           </div>
         </div>
         <div className="parallax" />
         <div>
-          <Spot>
+         <Spot>
             <FormattedMessage {...messages.startProjectMessage} />
           </Spot>
+            {/*  
+             <ReactPlayer 
+             url={'https://www.youtube.com/watch?v=rEEXRbh4ox4'}    
+             config={{
+               youtube: {
+                 playerVars: { showinfo: 1, origin: 'http://localhost:3000' }
+                               
+               }
+             }}/>*/}
+        
+         
         </div>
-        <div className="parallax" />
+       <div className="parallax" /> 
       </CenteredSection>
     </WelcomePage>
   </article>
