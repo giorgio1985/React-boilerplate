@@ -36,7 +36,17 @@ import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import './HomePage.css';
-import ReactPlayer from 'react-player';
+import { Slide } from 'react-slideshow-image';
+import { Fade } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+import shutterstock from 'images/shutterstock.jpg';
+import template1 from 'images/template1.jpg';
+import template2 from 'images/template2.jpg';
+import hipster2 from 'images/hipster2.jpg';
+import barba_hipster from 'images/barba_hipster.jpg';
+
+
+//import ReactPlayer from 'react-player';
 
 
 const key = 'home';
@@ -64,6 +74,7 @@ export function HomePage({
     repos,
   };
 
+
   return (
     <article>
     <Helmet>
@@ -87,22 +98,43 @@ export function HomePage({
           </div>
         </div>
         <div className="parallax" />
-        <div>
-         <Spot>
-            <FormattedMessage {...messages.startProjectMessage} />
-          </Spot>
-            {/*  
+      <div>  
+          {/*  
+           
              <ReactPlayer 
              url={'https://www.youtube.com/watch?v=rEEXRbh4ox4'}    
              config={{
                youtube: {
-                 playerVars: { showinfo: 1, origin: 'http://localhost:3000' }
+                 playerVars: { showinfo: 1, origin: 'https://www.youtube.com/iframe_api' }
                                
                }
-             }}/>*/}
+             }}/> */}
+
+  <div className="slide-container">
+      <Fade>
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={shutterstock} width="100%" alt=""/>
+          </div>
+      
+        </div>
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={hipster2} width="100%" alt="" />
+          </div>
+          
+        </div>
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={barba_hipster} width="100%" alt="" />
+          </div>
+          
+        </div>
+      </Fade>
+    </div>
         
          
-        </div>
+      {/**/}  </div>
        <div className="parallax" /> 
       </CenteredSection>
     </WelcomePage>
