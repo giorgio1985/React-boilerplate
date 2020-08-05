@@ -6,6 +6,7 @@ import HeaderLink from './HeaderLink';
 import Banner from './banner.jpg';
 import messages from './messages';
 import { TopHeader, InnerHeader } from './style';
+import Headerlink from '../Headerlink';
 
 function Header() {
   return (
@@ -32,9 +33,9 @@ function Header() {
         <HeaderLink to="/about">
           <FormattedMessage {...messages.about} />
         </HeaderLink>
-        <HeaderLink to="/login">
-          <FormattedMessage {...messages.login} />
-        </HeaderLink>
+            <Headerlink>
+         <FormattedMessage {...messages.login} />  {/* */}
+        </Headerlink>
         
       </NavBar>
     </div>

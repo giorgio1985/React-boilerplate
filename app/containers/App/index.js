@@ -50,7 +50,7 @@ export default function App() {
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/product" component={Product} />
         <Route path="/about" component={About} />
-        <Route path="/login" component={Login} />
+    {/* <Route path="/login" component={Login} /> */}
         <Route path="/*" component={NotFoundPage} />
       </Switch>
       <Footer />
