@@ -7,9 +7,9 @@ import styled from 'styled-components';
 
 const Headerlink = styled.p`
 color: black;
-padding: 0em;
+padding: 1.5em;
 margin-top: -1.5em;
-margin-left: 60em;
+float: right;
 position: relative;
 padding-top: -5px;
 text-decoration: none;

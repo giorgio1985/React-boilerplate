@@ -9,6 +9,9 @@ import { TopHeader, InnerHeader } from './style';
 import Headerlink from '../Headerlink';
 
 function Header() {
+  
+  
+
   return (
     <div>
       <TopHeader>
@@ -33,13 +36,14 @@ function Header() {
         <HeaderLink to="/about">
           <FormattedMessage {...messages.about} />
         </HeaderLink>
-            <Headerlink>
-         <FormattedMessage {...messages.login} />  {/* */}
+        <Headerlink onClick={(ev) => { alert('Coming soon'); console.log('event.target:', ev.target); }}>
+           <FormattedMessage {...messages.login} />  {/* */}
         </Headerlink>
-        
+      
       </NavBar>
     </div>
   );
+
 }
 
 export default Header;
