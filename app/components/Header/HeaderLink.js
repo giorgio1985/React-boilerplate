@@ -11,8 +11,11 @@ padding-top: 7em;
 text-decoration: none;
 font-weight: bold;
 font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-&:active {
-  background: #white;
-  color: #fff;
+&:focus {
+  background: whitesmoke;
+};
+&:hover {
+  background: whitesmoke;
 }
+
 `;
