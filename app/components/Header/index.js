@@ -7,12 +7,8 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
-import Banner from './banner.jpg';
 import messages from './messages';
 import { TopHeader, InnerHeader } from './style';
-import Headerlink from '../Headerlink';
-import { render } from 'react-testing-library';
-import ReactDOM from 'react-dom';
 
 
 function Header() {
@@ -27,6 +23,7 @@ function Header() {
       <InnerHeader />
    </TopHeader>
    <NavBar>
+   
       <HeaderLink to="/">
          <FormattedMessage {...messages.home} />
       </HeaderLink>
@@ -46,13 +43,15 @@ function Header() {
       </HeaderLink>
       <HeaderLink to="/about">
          <FormattedMessage {...messages.about} />
-      </HeaderLink>
+      </HeaderLink> 
+     
       <Button variant="none" onClick={handleShow} >
+      <i className="fa fa-lock" aria-hidden="true"></i>
          <FormattedMessage {...messages.login} />
       </Button>
       <Modal show={show} onHide={handleClose}>
          <Modal.Header closeButton>
-            <Modal.Title>Login</Modal.Title>
+            <Modal.Title><i className="fa fa-lock" aria-hidden="true"></i>Login</Modal.Title>
          </Modal.Header>
          <Modal.Body>
             <form>
@@ -71,7 +70,7 @@ function Header() {
                   <Form.Check type="checkbox" label="Check me out" />
                </Form.Group>
                <Button variant="primary" type="submit">
-               Login
+                     Login
                </Button>
             </form>
          </Modal.Body>
@@ -86,9 +85,7 @@ function Header() {
 
 
   ); 
-render(<Header />);
 
 }
-
 
 export default Header;
