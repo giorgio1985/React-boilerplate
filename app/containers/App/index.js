@@ -10,6 +10,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
+import Uomo from 'containers/Uomo/Loadable';
+import Donna from 'containers/Donna/Loadable';
 import Contact from 'containers/Contact/Loadable';
 import Team from 'containers/Team/Loadable';
 import Portfolio from 'containers/Portfolio/Loadable';
@@ -45,6 +47,8 @@ export default function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route path="/uomo" component={Uomo} />
+        <Route path="/donna" component={Donna} />
         <Route path="/contact" component={Contact} />
         <Route path="/team" component={Team} />
         <Route path="/portfolio" component={Portfolio} />

@@ -8,6 +8,8 @@
   "boilerplate.components.Header.home": "HOME",
   "boilerplate.components.Header.contact": "CONTATTI",
   "boilerplate.components.Header.login": "LOGIN",
+  "boilerplate.components.Header.uomo": "UOMO",
+  "boilerplate.components.Header.donna": "DONNA",
   "boilerplate.containers.FeaturePage.css.header": "Features",
   "boilerplate.containers.FeaturePage.css.message": "Next generation CSS",
   "boilerplate.containers.FeaturePage.feedback.header": "Instant feedback",
@@ -39,5 +41,7 @@
   "boilerplate.containers.ShowPortfolio.header": "Portfolio",
   "boilerplate.containers.About.header": "About me",
   "boilerplate.containers.Product.header": "Prodotti",
-  "boilerplate.containers.Login.header": "Login"
+  "boilerplate.containers.Login.header": "Login",
+  "boilerplate.containers.uomo.header": "Uomo",
+  "boilerplate.containers.donna.header": "Donna"
 }

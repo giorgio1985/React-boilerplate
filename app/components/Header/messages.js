@@ -36,4 +36,12 @@ export default defineMessages({
     id: `${scope}.login`,
     defaultMessage: 'login',
   },
+  uomo: {
+    id: `${scope}.uomo`,
+    defaultMessage: 'uomo',
+  },
+  donna: {
+    id: `${scope}.donna`,
+    defaultMessage: 'donna',
+  },
 });

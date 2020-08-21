@@ -27,6 +27,12 @@ function Header() {
       <HeaderLink to="/">
          <FormattedMessage {...messages.home} />
       </HeaderLink>
+      <HeaderLink to="/uomo">
+         <FormattedMessage {...messages.uomo} />
+      </HeaderLink> 
+      <HeaderLink to="/donna">
+         <FormattedMessage {...messages.donna} />
+      </HeaderLink> 
       <HeaderLink to="/contact">
          <FormattedMessage {...messages.contact} />
       </HeaderLink>
@@ -37,10 +43,10 @@ function Header() {
       <HeaderLink to="/portfolio">
          <FormattedMessage {...messages.portfolio} />
       </HeaderLink>
-      */} 
+       
       <HeaderLink to="/product">
          <FormattedMessage {...messages.product} />
-      </HeaderLink>
+      </HeaderLink>*/}
       <HeaderLink to="/about">
          <FormattedMessage {...messages.about} />
       </HeaderLink> 
