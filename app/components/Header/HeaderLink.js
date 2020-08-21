@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default styled(Link)`
 color: black;
-padding: 2.0em;
+padding: 1.5em;
 margin: 1.2em;
 margin-left: 0.4em;
 position: relative;
@@ -12,10 +12,10 @@ text-decoration: none;
 font-weight: bold;
 font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 &:focus {
-  background: whitesmoke;
+  background: white;
 };
 &:hover {
-  background: whitesmoke;
+  background: white;
 }
 
 `;
