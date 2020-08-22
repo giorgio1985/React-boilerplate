@@ -17,15 +17,20 @@ import makeSelectUomo from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
+import headerUomo from '../../components/HeaderUomo';
+import HeaderUomo from '../../components/HeaderUomo';
 
 export function Uomo() {
   useInjectReducer({ key: 'uomo', reducer });
   useInjectSaga({ key: 'uomo', saga });
 
   return (
+
     <div>
       <FormattedMessage {...messages.header} />
+      <HeaderUomo></HeaderUomo>
     </div>
+
   );
 }
 
