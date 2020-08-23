@@ -40,6 +40,7 @@ import { Slide } from 'react-slideshow-image';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import shutterstock from 'images/shutterstock.jpg';
+import shutterstock2 from 'images/shutterstock2.jpg';
 import template1 from 'images/template1.jpg';
 import template2 from 'images/template2.jpg';
 import hipster2 from 'images/hipster2.jpg';
@@ -99,19 +100,17 @@ export function HomePage({
         </div>
         <div className="parallax" />
       <div>  
-          {/*  
-           
-             <ReactPlayer 
-             url={'https://www.youtube.com/watch?v=rEEXRbh4ox4'}    
-             config={{
-               youtube: {
-                 playerVars: { showinfo: 1, origin: 'https://www.youtube.com/iframe_api' }
-                               
-               }
-             }}/> */}
+          {/*  */}
 
   <div className="slide-container">
       <Fade>
+
+      <div className="each-fade">
+          <div className="image-container">
+            <img src={shutterstock2} width="100%" alt=""/>
+          </div>
+      
+        </div>
         <div className="each-fade">
           <div className="image-container">
             <img src={shutterstock} width="100%" alt=""/>

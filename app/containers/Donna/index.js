@@ -17,6 +17,13 @@ import makeSelectDonna from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
+import HeaderDonna from '../../components/HeaderDonna';
+
+import 'react-slideshow-image/dist/styles.css'
+import { Fade } from 'react-slideshow-image';
+import shutterstock from '../../images/shutterstock.jpg';
+import shutterstock2 from '../../images/shutterstock2.jpg';
+import shutterstock3 from '../../images/shutterstock3.jpg';
 
 export function Donna() {
   useInjectReducer({ key: 'donna', reducer });
@@ -25,6 +32,31 @@ export function Donna() {
   return (
     <div>
       <FormattedMessage {...messages.header} />
+      <HeaderDonna></HeaderDonna>
+
+      <div className="slide-container">
+      <Fade>
+        <div className="each-fade">
+          <div className="image-container">
+          {/* */}  <img src={shutterstock} width="100%" alt=""/>
+          </div>
+      
+        </div>
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={shutterstock2} width="100%" alt="" />
+          </div>
+          
+        </div>
+        <div className="each-fade">
+          <div className="image-container">
+            <img src={shutterstock3} width="100%" alt="" />
+          </div>
+          
+        </div>
+      </Fade>
+    </div>
+    
     </div>
   );
 }
