@@ -55,6 +55,7 @@ export function Uomo() {
           </div>
           
         </div>
+        
       </Fade>
     </div>
     </div>

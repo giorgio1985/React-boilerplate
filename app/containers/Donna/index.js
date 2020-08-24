@@ -36,6 +36,7 @@ export function Donna() {
 
       <div className="slide-container">
       <Fade>
+
         <div className="each-fade">
           <div className="image-container">
           {/* */}  <img src={shutterstock} width="100%" alt=""/>

@@ -30,35 +30,35 @@ function HeaderUomo() {
     <Navbar bg="dark" id="basic-nav-dropdown" className="mr-auto"  expand="lg">
 
     <NavDropdown title="Nuovi Arrivi"  bg="dark" variant="dark"  id="colorClass" >
-        <NavDropdown.Item href="abbigliamento-news" >Abbigliamento</NavDropdown.Item>
-        <NavDropdown.Item href="scarpe-news">Scarpe</NavDropdown.Item>
-        <NavDropdown.Item href="accessori-news">Accessori</NavDropdown.Item>
+        <NavDropdown.Item href="news-abbigliamento-uomo" >Abbigliamento</NavDropdown.Item>
+        <NavDropdown.Item href="news-scarpe-uomo">Scarpe</NavDropdown.Item>
+        <NavDropdown.Item href="news-accessori-uomo">Accessori</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="altre-news">Altro</NavDropdown.Item>
+        <NavDropdown.Item href="news-altro-uomo">Altro</NavDropdown.Item>
       </NavDropdown>
 
       <NavDropdown title="Abbigliamento"  bg="dark" variant="dark" id="colorClass">
       <NavDropdown title="Categorie"  bg="dark" variant="dark" id="categorieColorClass">
-        <NavDropdown.Item href="T-Shirts">T-shirt</NavDropdown.Item>
-        <NavDropdown.Item href="Maglie-e-Felpe">Maglie &amp; Felpe </NavDropdown.Item>
-        <NavDropdown.Item href="Pantaloni">Pantaloni</NavDropdown.Item>
-        <NavDropdown.Item href="Giubbotti">Giubbotti</NavDropdown.Item>
+        <NavDropdown.Item href="t-shirts-uomo">T-shirt</NavDropdown.Item>
+        <NavDropdown.Item href="Maglie-e-Felpe-uomo">Maglie &amp; Felpe </NavDropdown.Item>
+        <NavDropdown.Item href="Pantaloni-uomo">Pantaloni</NavDropdown.Item>
+        <NavDropdown.Item href="Giubbotti-uomo">Giubbotti</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="altro">Altro</NavDropdown.Item>
+        <NavDropdown.Item href="altro-uomo">Altro</NavDropdown.Item>
       </NavDropdown>
       </NavDropdown>
 
       <NavDropdown title="Scarpe"  bg="dark" variant="dark" id="colorClass">
-        <NavDropdown.Item href="Scarpe">Sportive</NavDropdown.Item>
-        <NavDropdown.Item href="Scarpe">Stivali</NavDropdown.Item>
+        <NavDropdown.Item href="Scarpe-uomo">Sportive</NavDropdown.Item>
+        <NavDropdown.Item href="Stivali-uomo">Stivali</NavDropdown.Item>
       </NavDropdown>
 
       <NavDropdown title="Accessori"  bg="dark" variant="dark" id="colorClass">
-        <NavDropdown.Item href="Accessori">Occhiali</NavDropdown.Item>
+        <NavDropdown.Item href="Occhiali-uomo">Occhiali</NavDropdown.Item>
       </NavDropdown>
 
  
-      <Form  id="topForm" inline>
+      <Form id="topForm" inline>
         <FormControl type="text" placeholder="Search"  />
         <Button variant="outline-info">Search</Button>
      </Form>

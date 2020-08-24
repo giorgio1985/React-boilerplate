@@ -27,33 +27,33 @@ function HeaderDonna() {
         <Navbar bg="dark" id="basic-nav-dropdown"  className="mr-auto"  expand="lg">
      
         <NavDropdown title="Nuovi Arrivi"  bg="dark" variant="dark"  id="colorClass" >
-          <NavDropdown.Item href="abbigliamento-news" >Abbigliamento</NavDropdown.Item>
-          <NavDropdown.Item href="scarpe-news">Scarpe</NavDropdown.Item>
-          <NavDropdown.Item href="accessori-news">Borse e accessori</NavDropdown.Item>
+          <NavDropdown.Item href="news-abbigliamento-donna" >Abbigliamento</NavDropdown.Item>
+          <NavDropdown.Item href="news-scarpe-donna">Scarpe</NavDropdown.Item>
+          <NavDropdown.Item href="news-Borse-accessori-donna">Borse e accessori</NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item href="altre-news">Altro</NavDropdown.Item>
+          <NavDropdown.Item href="news-altro-donna">Altro</NavDropdown.Item>
       </NavDropdown>
 
       <NavDropdown title="Abbigliamento"  bg="dark" variant="dark" id="colorClass">
       <NavDropdown title="Categorie"  bg="dark" variant="dark" id="categorieColorClass">
-        <NavDropdown.Item href="T-Shirts">T-shirt</NavDropdown.Item>
-        <NavDropdown.Item href="Maglie-e-Felpe">Maglie &amp; Felpe </NavDropdown.Item>
+        <NavDropdown.Item href="T-Shirts-donna">T-shirt</NavDropdown.Item>
+        <NavDropdown.Item href="Maglie-e-Felpe-donna">Maglie &amp; Felpe </NavDropdown.Item>
         <NavDropdown.Item href="Gonne">Gonne</NavDropdown.Item>
-        <NavDropdown.Item href="Pantaloni">Pantaloni</NavDropdown.Item>
-        <NavDropdown.Item href="Giubbotti">Giubbotti</NavDropdown.Item>
+        <NavDropdown.Item href="Pantaloni-donna">Pantaloni</NavDropdown.Item>
+        <NavDropdown.Item href="Giubbotti-donna">Giubbotti</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="altro">Altro</NavDropdown.Item>
+        <NavDropdown.Item href="altro-donna">Altro</NavDropdown.Item>
       </NavDropdown>
       </NavDropdown>
 
       <NavDropdown title="Scarpe"  bg="dark" variant="dark" id="colorClass">
-        <NavDropdown.Item href="Scarpe">Sportive</NavDropdown.Item>
-        <NavDropdown.Item href="Scarpe">Stivali</NavDropdown.Item>
+        <NavDropdown.Item href="Scarpe-donna">Sportive</NavDropdown.Item>
+        <NavDropdown.Item href="Stivali-donna">Stivali</NavDropdown.Item>
       </NavDropdown>
 
       <NavDropdown title="Borse e Accessori"  bg="dark" variant="dark" id="colorClass">
-        <NavDropdown.Item href="Accessori">Borse</NavDropdown.Item>
-        <NavDropdown.Item href="Accessori">Occhiali</NavDropdown.Item>
+        <NavDropdown.Item href="Borse-donna">Borse</NavDropdown.Item>
+        <NavDropdown.Item href="Occhiali-donna">Occhiali</NavDropdown.Item>
       </NavDropdown>
 
       <Form  id="topForm" inline>

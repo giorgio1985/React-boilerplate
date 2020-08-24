@@ -21,7 +21,7 @@ import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-import Login from 'containers/Login/Loadable';
+import TShirtUomo from 'containers/TShirtUomo/Loadable';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import GlobalStyle from '../../global-styles';
@@ -54,7 +54,7 @@ export default function App() {
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/product" component={Product} />
         <Route path="/about" component={About} />
-    {/* <Route path="/login" component={Login} /> */}
+        <Route path="/t-shirts-uomo" component={TShirtUomo} /> 
         <Route path="/*" component={NotFoundPage} />
       </Switch>
       <Footer />
