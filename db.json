@@ -1,0 +1,38 @@
+{
+    "shirtsUomo": [
+      {
+        "id": 1,
+        "taglia": "XXL",
+        "marca": "Londsdale",
+        "costo": "20 euro",
+        "pubblicazione": "2020"
+        
+      },
+      {
+        "id": 2,
+        "taglia": "XX",
+        "marca": "pico",
+        "costo": "22 euro",
+        "pubblicazione": "2019"
+        
+      },
+      {
+        "id": 3,
+        "taglia": "XXL",
+        "marca": "nano",
+        "costo": "200 euro",
+        "pubblicazione": "2020"
+        
+      },
+      {
+        "id": 4,
+        "taglia": "XL",
+        "marca": "teta",
+        "costo": "120 euro",
+        "pubblicazione": "2018"
+        
+      }
+     
+    ]
+  }
+  
