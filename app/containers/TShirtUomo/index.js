@@ -16,6 +16,7 @@ import { useInjectReducer } from 'utils/injectReducer';
 import makeSelectTShirtUomo from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import H1 from '../../components/H1';
 import messages from './messages';
 import HeaderUomo from '../../components/HeaderUomo';
 
@@ -56,7 +57,7 @@ render() {
     <div>
       <FormattedMessage {...messages.header} />
       <HeaderUomo></HeaderUomo>
-      
+      <H1>T-Shirts - Uomo</H1><hr></hr>
       
      
 

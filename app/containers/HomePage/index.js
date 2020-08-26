@@ -41,8 +41,6 @@ import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import shutterstock from 'images/shutterstock.jpg';
 import shutterstock2 from 'images/shutterstock2.jpg';
-import template1 from 'images/template1.jpg';
-import template2 from 'images/template2.jpg';
 import hipster2 from 'images/hipster2.jpg';
 import barba_hipster from 'images/barba_hipster.jpg';
 

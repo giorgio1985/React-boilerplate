@@ -22,6 +22,15 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import TShirtUomo from 'containers/TShirtUomo/Loadable';
+import FelpeUomo from 'containers/FelpeUomo/Loadable';
+import PantaloniUomo from 'containers/PantaloniUomo/Loadable';
+import GiubbottiUomo from 'containers/GiubottiUomo/Loadable';
+import AbbigliamentoUomo from 'containers/AbbigliamentoUomo/Loadable'; //news
+import ScarpeUomo from 'containers/ScarpeUomo/Loadable'; //news
+import AccessoriNews from 'containers/AccessoriNews/Loadable';
+import SportiveUomo from 'containers/SportiveUomo/Loadable';
+import StivaliUomo from 'containers/StivaliUomo/Loadable';
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 import GlobalStyle from '../../global-styles';
@@ -55,6 +64,14 @@ export default function App() {
         <Route path="/product" component={Product} />
         <Route path="/about" component={About} />
         <Route path="/t-shirts-uomo" component={TShirtUomo} /> 
+        <Route path="/Maglie-e-Felpe-uomo" component={FelpeUomo} /> 
+        <Route path="/Pantaloni-uomo" component={PantaloniUomo} />
+        <Route path="/Giubbotti-uomo" component={GiubbottiUomo}/>
+        <Route path="/news-abbigliamento-uomo" component={AbbigliamentoUomo}/> {/* news */}
+        <Route path="/news-scarpe-uomo" component={ScarpeUomo}/> {/* news */}
+        <Route path="/news-accessori-uomo" component={AccessoriNews}/>
+        <Route path="/Scarpe-uomo" component={SportiveUomo}/>
+        <Route path="/Stivali-uomo" component={StivaliUomo}/>
         <Route path="/*" component={NotFoundPage} />
       </Switch>
       <Footer />
