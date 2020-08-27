@@ -1,38 +1,64 @@
 {
-    "shirtsUomo": [
-      {
-        "id": 1,
-        "taglia": "XXL",
-        "marca": "Londsdale",
-        "costo": "20 euro",
-        "pubblicazione": "2020"
-        
-      },
-      {
-        "id": 2,
-        "taglia": "XX",
-        "marca": "pico",
-        "costo": "22 euro",
-        "pubblicazione": "2019"
-        
-      },
-      {
-        "id": 3,
-        "taglia": "XXL",
-        "marca": "nano",
-        "costo": "200 euro",
-        "pubblicazione": "2020"
-        
-      },
-      {
-        "id": 4,
-        "taglia": "XL",
-        "marca": "teta",
-        "costo": "120 euro",
-        "pubblicazione": "2018"
-        
-      }
-     
-    ]
-  }
-  
+  "shirtsUomo": [
+    {
+      "id": 1,
+      "taglia": "XXL",
+      "marca": "Londsdale",
+      "costo": "20 euro",
+      "pubblicazione": "27-8-2020",
+      "risorsa": "t-shirt-uomo1.jpg"
+      
+    },
+    {
+      "id": 2,
+      "taglia": "XX",
+      "marca": "pico",
+      "costo": "22 euro",
+      "pubblicazione": "12-5-2019",
+      "risorsa": "t-shirt-uomo2.jpg"
+      
+    }
+   
+  ],
+
+  "felpeUomo": [
+    {
+      "id": 3,
+      "taglia": "XXL",
+      "marca": "Adidas",
+      "costo": "70 euro",
+      "pubblicazione": "27-7-2020",
+      "risorsa": "felpaUomo1.jpg"
+      
+    },
+    {
+      "id": 4,
+      "taglia": "XX",
+      "marca": "Nike",
+      "costo": "25 euro",
+      "pubblicazione": "15-5-2019",
+      "risorsa": "felpaUomo2.jpg"
+      
+    }
+  ],
+  "pantaloniUomo": [
+    {
+      "id": 5,
+      "taglia": "52",
+      "marca": "xxxxxx",
+      "costo": "90 euro",
+      "pubblicazione": "25-7-2020",
+      "risorsa": "pantaloniUomo1.jpg"
+      
+    },
+    {
+      "id": 6,
+      "taglia": "48",
+      "marca": "yyyyy",
+      "costo": "35 euro",
+      "pubblicazione": "15-5-2017",
+      "risorsa": "pantaloniUomo3.jpg"
+      
+    }
+  ]
+}

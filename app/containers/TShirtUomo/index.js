@@ -21,6 +21,7 @@ import messages from './messages';
 import HeaderUomo from '../../components/HeaderUomo';
 import './shirtUomo.css';
 
+
 class TShirtUomo extends Component {
   //useInjectReducer({ key: 'tShirtUomo', reducer });
   //useInjectSaga({ key: 'tShirtUomo', saga });
@@ -38,13 +39,21 @@ componentDidMount() {
   .then(res => res.json())
   .then(data => {
 let shirtsUomo = data.map((post, index) =>{
+
+  console.log(`${post.risorsa}`);
   return (
     <div className="center" key={index}>
-      id: <p>{post.id}</p>
-     Marca: <p>{post.marca}</p>
-      Costo: <p>{post.costo}</p>
-  pubblicazione: <p>{post.pubblicazione}</p>
-
+            foto: <div className="jobCards">
+                    <img src={require(`C:/Users/giorgio.adonoo/Documents/React-boilerplate/app/images/${post.risorsa}`)} width="100%" /> 
+                  </div>  
+              id:  <p>{post.id}</p>
+           Marca:  <p>{post.marca}</p>
+           Costo:  <p>{post.costo}</p>
+   pubblicazione:  <p>{post.pubblicazione}</p>
+         
+{/**/} 
+  
+        
     </div>
   )
 })
