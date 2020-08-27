@@ -19,6 +19,7 @@ import saga from './saga';
 import H1 from '../../components/H1';
 import messages from './messages';
 import HeaderUomo from '../../components/HeaderUomo';
+import './shirtUomo.css';
 
 class TShirtUomo extends Component {
   //useInjectReducer({ key: 'tShirtUomo', reducer });
@@ -38,7 +39,7 @@ componentDidMount() {
   .then(data => {
 let shirtsUomo = data.map((post, index) =>{
   return (
-    <div key={index}>
+    <div className="center" key={index}>
       id: <p>{post.id}</p>
      Marca: <p>{post.marca}</p>
       Costo: <p>{post.costo}</p>

@@ -49,6 +49,7 @@ function HeaderDonna() {
       <NavDropdown title="Scarpe"  bg="dark" variant="dark" id="colorClass">
         <NavDropdown.Item href="Scarpe-donna">Sportive</NavDropdown.Item>
         <NavDropdown.Item href="Stivali-donna">Stivali</NavDropdown.Item>
+        <NavDropdown.Item href="Stivaletti-donna">Stivaletti</NavDropdown.Item>
       </NavDropdown>
 
       <NavDropdown title="Borse e Accessori"  bg="dark" variant="dark" id="colorClass">
