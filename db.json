@@ -7,7 +7,6 @@
       "costo": "20 euro",
       "pubblicazione": "27-8-2020",
       "risorsa": "t-shirt-uomo1.jpg"
-      
     },
     {
       "id": 2,
@@ -16,11 +15,8 @@
       "costo": "22 euro",
       "pubblicazione": "12-5-2019",
       "risorsa": "t-shirt-uomo2.jpg"
-      
     }
-   
   ],
-
   "felpeUomo": [
     {
       "id": 3,
@@ -29,7 +25,6 @@
       "costo": "70 euro",
       "pubblicazione": "27-7-2020",
       "risorsa": "felpaUomo1.jpg"
-      
     },
     {
       "id": 4,
@@ -38,7 +33,6 @@
       "costo": "25 euro",
       "pubblicazione": "15-5-2019",
       "risorsa": "felpaUomo2.jpg"
-      
     }
   ],
   "pantaloniUomo": [
@@ -49,7 +43,6 @@
       "costo": "90 euro",
       "pubblicazione": "25-7-2020",
       "risorsa": "pantaloniUomo1.jpg"
-      
     },
     {
       "id": 6,
@@ -58,7 +51,6 @@
       "costo": "35 euro",
       "pubblicazione": "15-5-2017",
       "risorsa": "pantaloniUomo3.jpg"
-      
     }
   ],
   "giubottiUomo": [
@@ -69,7 +61,6 @@
       "costo": "190 euro",
       "pubblicazione": "25-2-2019",
       "risorsa": "giubbottoUomo1.jpg"
-      
     },
     {
       "id": 8,
@@ -78,7 +69,112 @@
       "costo": "22.50 euro",
       "pubblicazione": "18-5-2018",
       "risorsa": "giubbottoUomo2.jpg"
-      
+    }
+  ],
+  "sportiveUomo": [
+    {
+      "id": 9,
+      "misura": 42,
+      "marca": "xxxxxx",
+      "costo": "10 euro",
+      "pubblicazione": "25-12-2019",
+      "risorsa": "sportiveUomo1.jpg"
+    },
+    {
+      "id": 10,
+      "misura": 44,
+      "marca": "yyyyy",
+      "costo": "44.50 euro",
+      "pubblicazione": "18-8-2020",
+      "risorsa": "sportiveUomo2.jpg"
+    }
+  ],
+  "stivaliUomo": [
+    {
+      "id": 11,
+      "misura": 38,
+      "marca": "xxxxxx",
+      "costo": "100 euro",
+      "pubblicazione": "25-12-2019",
+      "risorsa": "stivaliUomo1.jpg"
+    },
+    {
+      "id": 12,
+      "misura": 48,
+      "marca": "yyyyy",
+      "costo": "47 euro",
+      "pubblicazione": "18-8-2020",
+      "risorsa": "stivaliUomo2.jpg"
+    }
+  ],
+  "occhialiUomo": [
+    {
+      "id": 13,
+      "marca": "xxxxxx",
+      "costo": "100 euro",
+      "pubblicazione": "25-12-2019",
+      "risorsa": "occhialiUomo1.jpg"
+    },
+    {
+      "id": 14,
+      "marca": "yyyyy",
+      "costo": "127 euro",
+      "pubblicazione": "18-8-2020",
+      "risorsa": "occhialiUomo2.jpg"
+    }
+  ],
+  "shirtsDonna": [
+    {
+      "id": 15,
+      "taglia": "XXL",
+      "marca": "D&G",
+      "costo": "78 euro",
+      "pubblicazione": "13-8-2020",
+      "risorsa": "t-shirt-donna2.jpg"
+    },
+    {
+      "id": 16,
+      "taglia": "XX",
+      "marca": "Dior",
+      "costo": "96 euro",
+      "pubblicazione": "02-7-2019",
+      "risorsa": "t-shirt-donna1.jpg"
+    }
+  ],
+  "felpeDonna": [
+    {
+      "id": 17,
+      "taglia": "S",
+      "marca": "Adidas",
+      "costo": "90 euro",
+      "pubblicazione": "25-7-2020",
+      "risorsa": "felpeDonne1.jpg"
+    },
+    {
+      "id": 18,
+      "taglia": "M",
+      "marca": "Nike",
+      "costo": "125 euro",
+      "pubblicazione": "15-4-2019",
+      "risorsa": "felpeDonne2.jpg"
+    }
+  ],
+  "gonne": [
+    {
+      "id": 19,
+      "taglia": "S",
+      "marca": "Adidas",
+      "costo": "10 euro",
+      "pubblicazione": "25-2-2020",
+      "risorsa": "gonna1.jpg"
+    },
+    {
+      "id": 20,
+      "taglia": "M",
+      "marca": "Nike",
+      "costo": "35 euro",
+      "pubblicazione": "11-4-2018",
+      "risorsa": "gonna2.jpg"
     }
   ]
 }
