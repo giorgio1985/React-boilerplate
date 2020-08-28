@@ -60,5 +60,25 @@
       "risorsa": "pantaloniUomo3.jpg"
       
     }
+  ],
+  "giubottiUomo": [
+    {
+      "id": 7,
+      "taglia": "M",
+      "marca": "xxxxxx",
+      "costo": "190 euro",
+      "pubblicazione": "25-2-2019",
+      "risorsa": "giubbottoUomo1.jpg"
+      
+    },
+    {
+      "id": 8,
+      "taglia": "S",
+      "marca": "yyyyy",
+      "costo": "22.50 euro",
+      "pubblicazione": "18-5-2018",
+      "risorsa": "giubbottoUomo2.jpg"
+      
+    }
   ]
 }

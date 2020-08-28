@@ -19,7 +19,7 @@ import saga from './saga';
 import H1 from '../../components/H1';
 import messages from './messages';
 import HeaderUomo from '../../components/HeaderUomo';
-import './shirtUomo.css';
+import './layoutTable.css';
 
 
 class TShirtUomo extends Component {

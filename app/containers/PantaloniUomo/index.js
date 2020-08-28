@@ -19,6 +19,7 @@ import saga from './saga';
 import H1 from '../../components/H1';
 import messages from './messages';
 import HeaderUomo from '../../components/HeaderUomo';
+import '../TShirtUomo/layoutTable.css';
 
 class PantaloniUomo extends Component {
  // useInjectReducer({ key: 'pantaloniUomo', reducer });
