@@ -4,7 +4,7 @@
  *
  */
 
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
@@ -19,37 +19,54 @@ import saga from './saga';
 import messages from './messages';
 import HeaderDonna from '../../components/HeaderDonna';
 import H1 from '../../components/H1';
+import '../TShirtUomo/layoutTable.css';
 
-export function OcchialiDonna() {
-  useInjectReducer({ key: 'occhialiDonna', reducer });
-  useInjectSaga({ key: 'occhialiDonna', saga });
+class OcchialiDonna extends Component {
 
-  return (
+  constructor(props) {
+    super(props);
+    this.state = {
+      occhialiDonna: []
+    }
+  }
+
+  componentDidMount() {
+    fetch('http://localhost:3001/occhialiDonna')
+    .then(res => res.json())
+    .then(data => {
+      let occhialiDonna = data.map((post, index)=> {
+        return (
+          <div className="center" key={index}>
+          foto: <div className="jobCards">
+                  <img src={require(`C:/Users/giorgio.adonoo/Documents/React-boilerplate/app/images/${post.risorsa}`)} width="100%" /> 
+                </div>  
+            id:  <p>{post.id}</p>
+         Marca:  <p>{post.marca}</p>
+         Costo:  <p>{post.costo}</p>
+  pubblicazione: <p>{post.pubblicazione}</p>
+  
+          </div>
+        )
+      })
+      this.setState({ occhialiDonna: occhialiDonna })
+    })
+  }
+
+  render() {
+      return (
     <div>
       <FormattedMessage {...messages.header} />
       <HeaderDonna></HeaderDonna>
       <H1>Occhiali - Donna</H1><hr></hr>
+
+      <div id="tableContent">
+        { this.state.occhialiDonna  }
+      </div>
     </div>
   );
 }
+  }
 
-OcchialiDonna.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-};
 
-const mapStateToProps = createStructuredSelector({
-  occhialiDonna: makeSelectOcchialiDonna(),
-});
 
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-  };
-}
-
-const withConnect = connect(
-  mapStateToProps,
-  mapDispatchToProps,
-);
-
-export default compose(withConnect)(OcchialiDonna);
+export default OcchialiDonna;

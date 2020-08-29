@@ -4,7 +4,7 @@
  *
  */
 
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
@@ -19,37 +19,57 @@ import saga from './saga';
 import messages from './messages';
 import HeaderDonna from '../../components/HeaderDonna';
 import H1 from '../../components/H1';
+import '../TShirtUomo/layoutTable.css';
 
-export function GiubbottiDonna() {
-  useInjectReducer({ key: 'giubbottiDonna', reducer });
-  useInjectSaga({ key: 'giubbottiDonna', saga });
+class GiubbottiDonna extends Component {
 
-  return (
+
+ constructor(props) {
+   super(props);
+   this.state = {
+     giubbottiDonna: []
+   }
+ }
+ 
+componentDidMount() {
+  fetch('http://localhost:3001/giubbottiDonna')
+  .then(res => res.json())
+  .then(data => {
+    let giubbottiDonna = data.map((post, index)=> {
+      return (
+        <div className="center" key={index}>
+        foto: <div className="jobCards">
+                <img src={require(`C:/Users/giorgio.adonoo/Documents/React-boilerplate/app/images/${post.risorsa}`)} width="100%" /> 
+              </div>  
+          id:  <p>{post.id}</p>
+      taglia:  <p>{post.taglia}</p>
+       Marca:  <p>{post.marca}</p>
+       Costo:  <p>{post.costo}</p>
+pubblicazione: <p>{post.pubblicazione}</p>
+
+        </div>
+      )
+    })
+    this.setState({ giubbottiDonna: giubbottiDonna})
+  })
+}
+
+
+
+ render() {
+     return (
     <div>
       <FormattedMessage {...messages.header} />
       <HeaderDonna></HeaderDonna>
       <H1>Giubbotti - Donna</H1><hr></hr>
+
+      <div id="tableContent">
+        { this.state.giubbottiDonna }
+      </div>
     </div>
   );
 }
+ }
 
-GiubbottiDonna.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-};
 
-const mapStateToProps = createStructuredSelector({
-  giubbottiDonna: makeSelectGiubbottiDonna(),
-});
-
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-  };
-}
-
-const withConnect = connect(
-  mapStateToProps,
-  mapDispatchToProps,
-);
-
-export default compose(withConnect)(GiubbottiDonna);
+export default GiubbottiDonna;

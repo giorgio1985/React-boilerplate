@@ -4,7 +4,7 @@
  *
  */
 
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
@@ -20,12 +20,42 @@ import saga from './saga';
 import messages from './messages';
 import HeaderDonna from '../../components/HeaderDonna';
 import H1 from '../../components/H1';
+import '../TShirtUomo/layoutTable.css';
 
-export function StivalettiDonna() {
-  useInjectReducer({ key: 'stivalettiDonna', reducer });
-  useInjectSaga({ key: 'stivalettiDonna', saga });
+class StivalettiDonna extends Component {
 
-  return (
+  constructor(props) {
+    super(props);
+    this.state = {
+      stivalettiDonna: []
+    }
+  }
+
+componentDidMount() {
+  fetch('http://localhost:3001/stivalettiDonna')
+  .then(res => res.json())
+  .then(data => {
+    let stivalettiDonna = data.map((post, index)=> {
+      return (
+        <div className="center" key={index}>
+        foto: <div className="jobCards">
+                <img src={require(`C:/Users/giorgio.adonoo/Documents/React-boilerplate/app/images/${post.risorsa}`)} width="100%" /> 
+              </div>  
+          id:  <p>{post.id}</p>
+      misura:  <p>{post.misura}</p>
+       Marca:  <p>{post.marca}</p>
+       Costo:  <p>{post.costo}</p>
+pubblicazione: <p>{post.pubblicazione}</p>
+
+        </div>
+      )
+    })
+    this.setState({ stivalettiDonna: stivalettiDonna })
+  })
+}
+
+  render() {
+      return (
     <div>
       <Helmet>
         <title>StivalettiDonna</title>
@@ -34,27 +64,14 @@ export function StivalettiDonna() {
       <FormattedMessage {...messages.header} />
       <HeaderDonna></HeaderDonna>
       <H1>Stivaletti - Donna</H1><hr></hr>
+
+      <div id="tableContent">
+        { this.state.stivalettiDonna }
+      </div>
     </div>
   );
 }
+  }
 
-StivalettiDonna.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-};
 
-const mapStateToProps = createStructuredSelector({
-  stivalettiDonna: makeSelectStivalettiDonna(),
-});
-
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-  };
-}
-
-const withConnect = connect(
-  mapStateToProps,
-  mapDispatchToProps,
-);
-
-export default compose(withConnect)(StivalettiDonna);
+export default StivalettiDonna;

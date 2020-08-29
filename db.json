@@ -176,5 +176,127 @@
       "pubblicazione": "11-4-2018",
       "risorsa": "gonna2.jpg"
     }
+  ],
+  "pantaloniDonna": [
+    {
+      "id": 21,
+      "taglia": "48",
+      "marca": "xxxxx",
+      "costo": "100 euro",
+      "pubblicazione": "25-12-2020",
+      "risorsa": "pantaloniDonna1.jpg"
+    },
+    {
+      "id": 22,
+      "taglia": "42",
+      "marca": "xxxxxx",
+      "costo": "351 euro",
+      "pubblicazione": "01-4-2018",
+      "risorsa": "pantaloniDonna2.jpg"
+    }
+  ],
+  "giubbottiDonna": [
+    {
+      "id": 23,
+      "taglia": "S",
+      "marca": "xxxxx",
+      "costo": "150 euro",
+      "pubblicazione": "25-12-2020",
+      "risorsa": "giubbottoDonna2.jpg"
+    },
+    {
+      "id": 24,
+      "taglia": "M",
+      "marca": "xxxxx",
+      "costo": "51 euro",
+      "pubblicazione": "01-4-2018",
+      "risorsa": "giubbottoDonna1.jpg"
+    }
+  ],
+  "sportiveDonna": [
+    {
+      "id": 25,
+      "misura": 40,
+      "marca": "xxxxxx",
+      "costo": "105 euro",
+      "pubblicazione": "15-12-2019",
+      "risorsa": "sportiveDonna1.jpg"
+    },
+    {
+      "id": 26,
+      "misura": 39,
+      "marca": "yyyyy",
+      "costo": "440 euro",
+      "pubblicazione": "28-8-2020",
+      "risorsa": "sportiveDonna2.jpg"
+    }
+  ],
+  "stivaliDonna": [
+    {
+      "id": 27,
+      "misura": 37,
+      "marca": "xxxxxx",
+      "costo": "15 euro",
+      "pubblicazione": "15-12-2019",
+      "risorsa": "stivaliDonna1.jpg"
+    },
+    {
+      "id": 28,
+      "misura": 39,
+      "marca": "yyyyy",
+      "costo": "44 euro",
+      "pubblicazione": "28-8-2020",
+      "risorsa": "stivaliDonna2.jpg"
+    }
+  ],
+  "stivalettiDonna": [
+    {
+      "id": 29,
+      "misura": 39,
+      "marca": "xxxxxx",
+      "costo": "115 euro",
+      "pubblicazione": "15-12-2019",
+      "risorsa": "stivalettiDonna1.jpg"
+    },
+    {
+      "id": 30,
+      "misura": 41,
+      "marca": "yyyyy",
+      "costo": "11 euro",
+      "pubblicazione": "28-8-2020",
+      "risorsa": "stivalettiDonna2.jpg"
+    }
+  ],
+  "borse": [
+    {
+      "id": 31,
+      "marca": "xxxxxx",
+      "costo": "125 euro",
+      "pubblicazione": "15-03-2019",
+      "risorsa": "borseDonna1.jpg"
+    },
+    {
+      "id": 32,
+      "marca": "yyyyy",
+      "costo": "400 euro",
+      "pubblicazione": "28-01-2020",
+      "risorsa": "borseDonna2.jpg"
+    }
+  ],
+  "occhialiDonna": [
+    {
+      "id": 33,
+      "marca": "xxxxxx",
+      "costo": "725 euro",
+      "pubblicazione": "15-03-2017",
+      "risorsa": "occhialiDonna1.jpg"
+    },
+    {
+      "id": 34,
+      "marca": "yyyyy",
+      "costo": "671 euro",
+      "pubblicazione": "28-11-2019",
+      "risorsa": "occhialiDonna2.jpg"
+    }
   ]
 }
