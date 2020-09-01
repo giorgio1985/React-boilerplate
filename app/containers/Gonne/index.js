@@ -38,7 +38,7 @@ class Gonne extends Component {
         return (
           <div className="center" key={index}>
           foto: <div className="jobCards">
-                  <img src={require(`C:/Users/giorgio.adonoo/Documents/React-boilerplate/app/images/${post.risorsa}`)} width="100%" /> 
+                   <img src = { require(`../../images/${post.risorsa}`) } crossOrigin="anonymous" width="100%" />  
                 </div>  
             id:  <p>{post.id}</p>
         taglia:  <p>{post.taglia}</p>
